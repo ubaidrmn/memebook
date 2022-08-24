@@ -1,0 +1,14 @@
+extends base.pug
+
+block content
+    div(class="all-content")
+        <form class="login-form" method="post" action="/register-user">
+            h1 Register
+            <br/>
+            p Already have an account? <a href="/login">Login here.</a>.
+            <input name="email" required type="email" placeholder="Email">
+            <input name="username" required placeholder="Username">
+            <input name="password" required type="password" placeholder="Password">
+            <button>Sign up</button>
+        </form>
+    script(src="/static/loginpage-script.js")

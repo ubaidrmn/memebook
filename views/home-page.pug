@@ -1,0 +1,29 @@
+extends base.pug
+block content
+    div(class="all-content")
+        h1(class="page-head") Home
+        if search.search != false
+            input(class="search-bar", placeholder="Type something here",value=search.query, id="search-bar")
+        else
+            input(class="search-bar", placeholder="Type something here", id="search-bar")
+        button(class="search-bar-button", onclick="search()") Search
+
+        each val in memes
+            div(class="post-each")
+                a(style="text-decoration:none;",href="/account/"+val.Username)
+                    <div class="post-each-head">
+                        <div></div>
+                        <p>@#{val.Username}</p> 
+                    </div>
+                <div class="post-each-caption">
+                    p #{val.Caption}
+                </div>
+                a(href="/meme/"+val.id)
+                    img(src=val.Link)
+                div(class="post-each-button-bar")
+                    a(href="/rate-meme?meme="+val.id+"&found=funny")
+                        <button>Funny (#{val.Funny})</button>
+                    a(href="/rate-meme?meme="+val.id+"&found=unfunny")
+                        <button>Unfunny (#{val.Unfunny})</button>
+                
+        <br/><br/><br/><br/><br/><br/>

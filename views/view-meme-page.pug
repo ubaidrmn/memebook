@@ -1,0 +1,37 @@
+extends base.pug
+block content
+    div(class="view-meme-parent")
+        div(class="all-content")
+            a(style="text-decoration:none;",href="/account/"+data.user.Username)
+                div(class="view-meme-user")
+                    div 
+                    h1(class="page-head") @#{data.user.Username}
+            p(class="view-meme-caption") #{data.meme.Caption}
+            img(class="view-meme-image",src=data.meme.Link)
+            div(class="view-meme-button-bar")
+                a(href="/rate-meme?meme="+data.meme.id+"&found=funny&redirect=view")
+                    button Funny (#{data.meme.Funny})
+                a(href="/rate-meme?meme="+data.meme.id+"&found=unfunny&redirect=view")
+                    button Not Funny (#{data.meme.Unfunny})
+
+            <br/><br/>
+
+            h1 Comments
+
+            form(action="/post-comment", method="post")
+                input(class="view-meme-input", name="comment", placeholder="Comment")
+                input(style="display:none;",name="memeId",value=data.meme.id)
+                button(class="view-meme-comment-button") Post
+
+            div(class="view-meme-comments")
+                each comment in data.comments
+                    div(class="view-meme-comments-each")
+                        a(style="text-decoration:none;",href="/account/"+comment.Username)
+                            div(class="view-meme-comments-each-profile")
+                                div
+                                p @#{comment.Username}
+
+                        p #{comment.Comment}
+
+    <br/><br/><br/><br/><br/><br/>
+

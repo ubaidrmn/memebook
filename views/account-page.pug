@@ -1,0 +1,19 @@
+extends base.pug
+block content
+    div(class="all-content")
+        if account.exists
+            div(class="account-page-profile")
+                div
+                h1(class="page-head") @#{account.data.Username}
+            p(class="account-page-para") #{account.total_memes.Total} memes
+            div(class="account-page-grid")
+                each meme in account.memes 
+                    a(href="/meme/"+meme.id)
+                        img(src=meme.Link) 
+
+            <br/><br/>
+        else
+            center
+                h1(class="page-head") User not found
+
+        <br/><br/><br/><br/><br/><br/><br/>

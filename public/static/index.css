@@ -1,0 +1,538 @@
+html,body {
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+    width: 100%;
+    background-color: #0B0D0F;
+    height: 100%;
+    max-height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+/*  */
+p {
+    color: white;
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+h1 {
+    color: white;
+    margin: 0px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: underline;
+    max-width: inherit;
+    color: inherit;
+}
+
+h1.page-head {
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.all-content {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.navigation-top-sign-in {
+    background-color: #3A3D9D;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: none;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+    white-space: nowrap;
+    border-radius: 10px;
+}
+
+.navigation-top-sign-in:focus {
+    outline: 3px solid #5b60ff;
+}
+
+
+.navigation-bottom-parent {
+    position: fixed;
+    bottom: 0px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.navigation-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #303942;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    max-width: 570px;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: 0px 0px 50px 0px #0B0D0F;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.navigation-bottom a {
+    text-decoration: none;
+}
+
+.navigation-bottom span {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+    margin: 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* HOME PAGE */
+
+.search-bar {
+    background-color: #303942;
+    max-width: 100%;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: none;
+    border: 0px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.search-bar-button {
+    font-size: 15px;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: none;
+    background-color: #3A3D9D;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.search-bar:focus, .search-bar-button:focus {
+    outline: 3px solid #5b60ff;
+}
+
+.post-each {
+    background-color: #303942;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.post-each-caption {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+}
+.post-each-head {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.post-each-head a {
+    text-decoration: none;
+}
+.post-each-head p {
+    margin-left: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.post-each-head div {
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
+    background-image: url('https://cdn2.iconfinder.com/data/icons/user-people-4/48/6-512.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    min-height: 30px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.post-each-button-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    width: 100%;
+    column-gap: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.post-each-button-bar a button {
+    font-size: 15px;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: none;
+    background-color: #3A3D9D;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+    max-width: 100%;
+    width: 100%;
+}
+
+.post-each-button-bar a button:focus {
+    outline: 3px solid #5b60ff;
+}
+
+.post-each img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* LOGIN AND REGISTER */
+
+.login-form {
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form input {
+    background-color: #303942;
+    max-width: 100%;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: none;
+    border: 0px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.login-form button {
+    background-color: #3A3D9D;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: none;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+    white-space: nowrap;
+}
+
+.login-form button:focus, .login-form input:focus {
+    outline: 3px solid #5b60ff;
+}
+
+/* ADD MEME PAGE */
+
+.add-meme-form input {
+    background-color: #303942;
+    max-width: 100%;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: none;
+    border: 0px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.add-meme-form button {
+    background-color: #3A3D9D;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: none;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+    white-space: nowrap;
+    border-radius: 10px;
+}
+
+.add-meme-form button:focus, .add-meme-form input:focus {
+    outline: 3px solid #5b60ff;
+}
+
+/* SETTINGS PAGE */
+
+.settings-logout {
+
+}
+
+.settings-logout {
+    background-color: #3A3D9D;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: none;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+    white-space: nowrap;
+    border-radius: 10px;
+}
+
+.settings-logout:focus {
+    outline: 3px solid #5b60ff;
+}
+
+/* ACCOUNT PAGE */
+
+.account-page-profile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.account-page-profile h1 {
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-top: 2px;
+}
+
+.account-page-profile div {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    background-image: url('https://cdn2.iconfinder.com/data/icons/user-people-4/48/6-512.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    min-height: 50px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.account-page-para {
+    margin-top: 10px;
+}
+
+.account-page-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    width: 100%;
+    column-gap: 10px;
+    margin-top: 20px;
+    row-gap: 10px;
+}
+
+.account-page-grid img {
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* VIEW MEME PAGE */
+
+.view-meme-parent {
+    padding-top: 20px;
+}
+
+.view-meme-user {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.view-meme-user div {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    background-image: url('https://cdn2.iconfinder.com/data/icons/user-people-4/48/6-512.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    min-height: 50px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.view-meme-user h1 {
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.view-meme-caption {
+    margin-bottom: 15px;
+}
+
+.view-meme-image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+
+.view-meme-button-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    width: 100%;
+    column-gap: 15px;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.view-meme-button-bar a button {
+    font-size: 15px;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: none;
+    background-color: #3A3D9D;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+    max-width: 100%;
+    width: 100%;
+}
+
+.view-meme-button-bar a button:focus, .view-meme-comment-button:focus, .view-meme-input:focus {
+    outline: 3px solid #5b60ff;
+}
+
+.view-meme-comment-button {
+    font-size: 15px;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: none;
+    background-color: #3A3D9D;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.view-meme-input {
+    background-color: #303942;
+    max-width: 100%;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: none;
+    border: 0px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.view-meme-comments {
+    display: flex;
+    flex-direction: column;
+}
+
+.view-meme-comments-each {
+    background-color: #303942;
+    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.view-meme-comments-each-profile {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.view-meme-comments-each-profile p {
+    margin-left: 5px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+.view-meme-comments-each-profile div {
+    height: 20px;
+    width: 20px;
+    min-width: 20px;
+    background-image: url('https://cdn2.iconfinder.com/data/icons/user-people-4/48/6-512.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    min-height: 20px;
+    background-color: white;
+    border-radius: 100%;
+}

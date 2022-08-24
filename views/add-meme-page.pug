@@ -1,0 +1,9 @@
+extends base.pug
+block content
+    div(class="all-content")
+        h1(class="page-head") New Meme+
+        <form action="add-meme-action" method="post" enctype="multipart/form-data" class="add-meme-form">
+        <input required name="caption" placeholder="Caption">
+        <input required name="file" type="file">
+        <button>Post</button>
+        </form>
